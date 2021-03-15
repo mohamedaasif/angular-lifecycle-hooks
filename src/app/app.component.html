@@ -1,0 +1,11 @@
+<div style="text-align:center">
+  <h1>LifCycle Hooks</h1>
+  <div>
+    <button (click)="decrement()">Sub</button>
+    <app-child *ngIf="isVisible" [childNumber]="counter" [childName]="user"></app-child>
+    <button (click)="increment()">Add</button>
+    <br><br>
+    <button (click)="updateValue()">update name</button>
+    <button (click)="switchVisibility()">Destroy</button>
+  </div>
+</div>
