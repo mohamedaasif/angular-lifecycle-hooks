@@ -44,7 +44,9 @@ export class ChildComponent implements OnInit, OnChanges, DoCheck {
   }
 
   ngAfterContentInit() {
-    console.log("ngAfterContentInit is same as ngOnInit - Initialized only once");
+    console.log(
+      "ngAfterContentInit is same as ngOnInit - Initialized only once"
+    );
   }
 
   ngAfterContentChecked() {
@@ -60,7 +62,6 @@ export class ChildComponent implements OnInit, OnChanges, DoCheck {
   }
 
   ngOnDestroy() {
-     console.log("Component has been destroyed");
+    console.log("Component has been destroyed");
   }
-
 }
